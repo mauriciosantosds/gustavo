@@ -1,47 +1,30 @@
 <!-- ***** Welcome Area Start ***** -->
 <section class="welcome-area">
 <!-- Welcome Slides -->
-<div class="welcome-slides owl-carousel">
-<!-- Single Welcome Slide -->
-<div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url(img/bg-img/1.jpg);">
-<div class="container h-100">
-    <div class="row h-100 align-items-center">
-    <div class="col-12">
-        <!-- Welcome Text -->
-        <div class="welcome-text text-center">
-        <h2 data-animation="fadeInUp" data-delay="100ms">We Believe Everyone Should Have Easy Access To Great Dental Care</h2>
-        <p data-animation="fadeInUp" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
-            offer you.</p>
-        <div class="welcome-btn-group">
-            <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
-            <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
-        </div>
-        </div>
-    </div>
-    </div>
+    <div class="row">
+<div class="box-welcome">
+            <div class="welcome-slides owl-carousel owl-theme">
+                <div class="item">
+                    <div class="wrap-serv">
+                        <!-- <img src="img/imagem-1.jpg" alt=""> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrap-serv"  style="background-color: blue; height: 300px; ">
+                        <div style="/*background-image: url(../img/imagem-1.jpg); height: 100%;*/"></div>
+                       <!--  <img src="img/imagem-2.jpg" alt=""> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrap-serv">
+                       <!--  <img src="img/imagem-3.jpg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+   
 </div>
-</div>
+    </div>
 
-<!-- Single Welcome Slide -->
-<div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url(img/bg-img/2.jpg);">
-<div class="container h-100">
-    <div class="row h-100 align-items-center">
-    <div class="col-12">
-        <!-- Welcome Text -->
-        <div class="welcome-text text-center">
-        <h2 data-animation="fadeInDown" data-delay="100ms">We Believe Everyone Should Have Easy Access To Great Dental Care</h2>
-        <p data-animation="fadeInDown" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
-            offer you.</p>
-        <div class="welcome-btn-group">
-            <a href="#" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
-            <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
-        </div>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
-</div>
 </section>
 <!-- ***** Welcome Area End ***** -->
 
@@ -100,33 +83,24 @@
     <div class="row">
     <!-- Single Dentist Area -->
     <div class="col-12 col-sm-6 col-md-6">
-        <div class="single-dentist-area mb-100">
-        <!-- Dentist Content -->
-        <div class="dentist-content">
-            <!-- Dentist Info -->
-            <div class="dentist-info bg-gradient-overlay">
-            <h5>Procedimentos</h5>
-            <p>Clareamento dental, diagnóstico e tratamento da Disfunção Temporo Mandibular (DTM) e da Dor Orofacial, mini-implantes, aparelhos ortodônticos e moldeiras de proteção para prática esportiva.</p>
-            <a href="#">Saiba mais</a>
-            </div>
-        </div>
+        <div class="wrapper-dent">
+                <div class="wrapper-dent-cont bg-gradient-overlay">
+                <h5>Procedimentos</h5>
+                <p>Clareamento dental, diagnóstico e tratamento da Disfunção Temporo Mandibular (DTM) e da Dor Orofacial, mini-implantes, aparelhos ortodônticos e moldeiras de proteção para prática esportiva.</p>
+                <a href="#">Saiba mais</a>
+                </div>
         </div>
     </div>
 
     <!-- Single Dentist Area -->
     <div class="col-12 col-sm-6 col-md-6">
-        <div class="single-dentist-area mb-100">
-        <!-- Dentist Content -->
-        <div class="dentist-content">
-            <!-- Dentist Info -->
-            <div class="dentist-info bg-gradient-overlay">
-            <h5>Marque sua consulta</h5>
-            <p>Entre em contato conosco e agende o horário de sua primeira consulta. Avaliaremos sua necessidade do uso de aparelho ortodôntico, além de realizarmos a triagem para outras especialidades.</p>
-            <a href="#">Saiba mais</a>    
+        <div class="wrapper-dent">
+            <div class="wrapper-dent-cont bg-gradient-overlay">
+                <h5>Marque sua consulta</h5>
+                <p>Entre em contato conosco e agende o horário de sua primeira consulta. Avaliaremos sua necessidade do uso de aparelho ortodôntico, além de realizarmos a triagem para outras especialidades.</p>
+                <a href="#">Saiba mais</a>    
             </div>
         </div>
-        </div>
-    </div>
     </div>
 </div>
 </section>
@@ -196,7 +170,7 @@
     </div>
 </div>
 <div class="row">
-    <div id="serv-carousel" class=" owl-carousel owl-theme">
+    <div id="serv-carousel" class="teste owl-carousel owl-theme">
         <?php foreach($servicos as $serv) {
         echo '<div class="item">
             <div class="wrap-serv">
@@ -215,22 +189,22 @@
         ?>
     </div>
 </div>
-<div class="row">
+<!-- <div class="row">
    <div class="teste owl-carousel owl-theme">
-
-   <div class="item">
-            <div class="wrap-serv">
-                <img src="http://gustavosouza.net/wp-content/uploads/mini-implante-1.jpg" alt="">
-                <a href="#">
-                    <div class="overlay">
-                        <div class="text">
-                            <img src="img/core-img/s1.png" alt="">
+        <div class="item">
+                <div class="wrap-serv">
+                    <img src="http://gustavosouza.net/wp-content/uploads/mini-implante-1.jpg" alt="">
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text">
+                                <img src="img/core-img/s1.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <h6 class="wrap-title">Mini-implantes</h6> 
-        </div><div class="item">
+                    </a>
+                </div>
+                <h6 class="wrap-title">Mini-implantes</h6> 
+        </div>
+        <div class="item">
             <div class="wrap-serv">
                 <img src="http://gustavosouza.net/wp-content/uploads/protetor-bucal-1.jpg" alt="">
                 <a href="#">
@@ -242,7 +216,8 @@
                 </a>
             </div>
             <h6 class="wrap-title">Moldeiras de proteção para prática esportiva</h6> 
-        </div><div class="item">
+        </div>
+        <div class="item">
             <div class="wrap-serv">
                 <img src="http://gustavosouza.net/wp-content/uploads/dtm-1.jpg" alt="">
                 <a href="#">
@@ -259,7 +234,7 @@
     
 
         
-</div>
+</div> -->
 
 </div>
 </section>

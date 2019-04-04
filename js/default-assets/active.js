@@ -24,7 +24,7 @@
   // :: 3.0 Welcome Carousel Active Code
   // ***********************************
 
-  if($.fn.owlCarousel) {
+  /* if($.fn.owlCarousel) {
     var welcomeSlider = $('.welcome-slides');
     welcomeSlider.owlCarousel({
       items: 1,
@@ -59,7 +59,7 @@
         $(this).addClass('animated ' + anim_name).css('opacity', '1');
       });
     });
-  }
+  } */
 
   // **************************************
   // :: 4.0 Testimonials Slides Active Code

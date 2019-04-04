@@ -3,11 +3,6 @@
   font-weight: bold;
 }
 
-.dentist-info a {
-  color: #fff;
-  font-weight: bold;
-}
-
 .wrap-serv {
   position: relative;
 }
@@ -86,4 +81,30 @@
 
 .nav-footer ul li a:hover {
   color: #00aeef;
+}
+
+.wrapper-dent {
+  padding-top: 4px;
+}
+
+.wrapper-dent-cont {
+  padding: 20px;
+}
+
+.wrapper-dent-cont h5, p{
+  color: #fff;
+}
+
+.wrapper-dent-cont a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrapper-dent-cont a:hover {
+  color: #00aeef;
+}
+
+.box-welcome {
+  max-width: 100%;
+  /* margin: 0 auto; */
 }
