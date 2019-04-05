@@ -1,4 +1,4 @@
-$('.teste').owlCarousel({
+$('#serv-carousel').owlCarousel({
     rtl:true,
     loop:true,
     margin:10,
@@ -18,7 +18,7 @@ $('.teste').owlCarousel({
     }
 });
 
-$('.welcome-slides').owlCarousel({
+/*$('.welcome-slides').owlCarousel({
     rtl:true,
     items: 1,
     loop:true,
@@ -29,4 +29,17 @@ $('.welcome-slides').owlCarousel({
     nav:true,
     navText: ["<i class='fa fa-arrow-right'></i>","<i class='fa fa-arrow-left'></i>"],
     
+}); */
+
+$(document).ready(function(){
+    $('.welcome-slides').bxSlider({
+        mode: 'horizontal',
+        auto:true,
+        autoStart: true,
+        moveSlides: 1,
+        slideMargin: 40,
+        infiniteLoop: true,
+        maxSlides: 1,
+        speed: 2000,
+    });
 });

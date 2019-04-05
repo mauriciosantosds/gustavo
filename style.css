@@ -957,7 +957,6 @@ ul {
   .breadcumb--con .breadcrumb .breadcrumb-item > a,
   .breadcumb--con .breadcrumb .breadcrumb-item.active {
     font-size: 14px;
-    text-transform: capitalize;
     color: #333333;
     font-weight: 500; }
     .breadcumb--con .breadcrumb .breadcrumb-item:focus, .breadcumb--con .breadcrumb .breadcrumb-item:hover,

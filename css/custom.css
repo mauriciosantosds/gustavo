@@ -17,6 +17,58 @@
   text-align: center;
 }
 
+/*estilos servicos e procedimentos ini*/
+.wrap-title-sp {
+  padding-top: 20px;
+  text-align: center;
+}
+.sp-text a {
+  font-weight: bold;
+}
+
+.sp-text a:hover {
+  color:#00aeef;
+}
+
+.sp-text-un {
+  padding-top: 20px;
+}
+
+.img-principal {
+  padding: 25px;
+}
+
+.img-principal img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 990px) {
+  .img-menor {
+    padding: 10px;
+  }
+}
+
+
+/*estilos servicos e procedimentos fim*/
+
+.servicos span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.servicos p, .servicos p a {
+  color: #fff;
+}
+
+.servicos p a {
+  font-weight: bold;
+}
+
+.servicos p a:hover {
+  color: #00aeef;
+}
+
 .overlay {
   opacity: 0;
   position: absolute;
@@ -91,9 +143,11 @@
   padding: 20px;
 }
 
-.wrapper-dent-cont h5, p{
+
+.wrapper-dent-cont h5, .wrapper-dent-cont p{
   color: #fff;
 }
+
 
 .wrapper-dent-cont a {
   color: #fff;
@@ -102,9 +156,4 @@
 
 .wrapper-dent-cont a:hover {
   color: #00aeef;
-}
-
-.box-welcome {
-  max-width: 100%;
-  /* margin: 0 auto; */
 }

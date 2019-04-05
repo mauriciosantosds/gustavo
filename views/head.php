@@ -1,7 +1,7 @@
 <?php 
 switch ($page) {
 	case "Home": $title = "Home &ndash; Dr Gustavo Souza"; break;
-	case "contato": $title = "Contato :: Clube de Aventureiros de Alagoas - Sejam Bem vindos! ::"; break;
+	case "Serviços e Procedimentos": $title = "Servicos e Procedimentos &ndash; Dr Gustavo Souza"; break;
 	case "empresa": $title = "Empresa :: Clube de Aventureiros de Alagoas - Sejam Bem vindos! ::"; break;
 	default: $title = ":: Clube de Aventureiros de Alagoas - Sejam Bem vindos! ::"; break;
 }
@@ -19,7 +19,8 @@ switch ($page) {
   <title><?= $title ?></title>
 
   <!-- Favicon -->
-  <link rel="icon" href="./img/core-img/favicon.ico">
+  <link rel="icon" href="img/core-img/favicon.ico">
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <link href="css/jquery.bxslider.css" rel="stylesheet">

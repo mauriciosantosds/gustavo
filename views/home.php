@@ -1,29 +1,23 @@
 <!-- ***** Welcome Area Start ***** -->
 <section class="welcome-area">
 <!-- Welcome Slides -->
-    <div class="row">
-<div class="box-welcome">
-            <div class="welcome-slides owl-carousel owl-theme">
-                <div class="item">
-                    <div class="wrap-serv">
-                        <!-- <img src="img/imagem-1.jpg" alt=""> -->
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="wrap-serv"  style="background-color: blue; height: 300px; ">
-                        <div style="/*background-image: url(../img/imagem-1.jpg); height: 100%;*/"></div>
-                       <!--  <img src="img/imagem-2.jpg" alt=""> -->
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="wrap-serv">
-                       <!--  <img src="img/imagem-3.jpg" alt=""> -->
-                    </div>
-                </div>
-            </div>
-   
-</div>
-    </div>
+   <!--  <div class="row">
+        <div class="col-12"> -->
+        <div class="box-welcome-slides">
+            <ul class="welcome-slides bxslider">
+                <li>
+                    <img src="img/imagem-1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/imagem-2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/imagem-3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <!-- </div>
+    </div> -->
 
 </section>
 <!-- ***** Welcome Area End ***** -->
@@ -157,7 +151,7 @@
     <!-- Dento Pricing Table Area End -->
 
 <!-- Dento Service Area Start -->
-<section class="section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/13.jpg');">
+<section class="servicos section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/13.jpg');">
 <div class="container">
 <div class="row">
 <!-- Service Content -->
@@ -170,7 +164,7 @@
     </div>
 </div>
 <div class="row">
-    <div id="serv-carousel" class="teste owl-carousel owl-theme">
+    <div id="serv-carousel" class="owl-carousel owl-theme">
         <?php foreach($servicos as $serv) {
         echo '<div class="item">
             <div class="wrap-serv">
@@ -183,7 +177,8 @@
                     </div>
                 </a>
             </div>
-            <h6 class="wrap-title">'.$serv->titulo.'</h6> 
+            <h6 class="wrap-title">'.$serv->titulo.'</h6>
+            <p>'.$serv->conteudo.'<span>...</span> <a href="servicos-procedimentos.php?id='.$serv->id.'">Saiba mais</a></p> 
         </div>';
         }
         ?>
@@ -242,79 +237,18 @@
 
 <!-- Book An Oppointment Area Start -->
 <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/12.jpg');">
-<div class="container">
-<div class="row">
-<!-- Section Heading -->
-<div class="col-12">
-    <div class="section-heading text-center white">
-    <h2>Book An Apointment</h2>
-    <div class="line"></div>
-    </div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-12">
-    <!-- Appointment Form -->
-    <div class="appointment-form">
-    <form action="#" method="post">
+    <div class="container">
         <div class="row">
-        <div class="col-md-6">
-            <div class="form-group mb-30">
-            <input type="text" name="your-name" class="form-control" placeholder="Your Name" required>
+            <!-- Service Content -->
+            <div class="col-12">
+                <!-- Section Heading -->
+                <div class="section-heading text-center white">
+                    <h2>Especialidades estão à sua disposição, fale conosco</h2>
+                    <div class="line"></div>
+                </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="form-group mb-30">
-            <input type="text" name="your-phone" class="form-control" placeholder="Your Phone" required>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group mb-30">
-            <input type="email" name="your-email" class="form-control" placeholder="Your Email" required>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group mb-30">
-            <input type="text" name="your-address" class="form-control" placeholder="Your Address">
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group mb-30">
-            <select name="your-scheldule" class="form-control">
-                <option value="Choose Your Scheldule">Choose Your Scheldule</option>
-                <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                <option value="8 PM to 10 PM">8 PM to 10 PM</option>
-            </select>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group mb-30">
-            <select name="your-time" class="form-control">
-                <option value="Choose Your Time">Choose Your Scheldule</option>
-                <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                <option value="8 PM to 10 PM">8 PM to 10 PM</option>
-            </select>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="form-group mb-30">
-            <textarea name="your-message" class="form-control" placeholder="Your Message"></textarea>
-            </div>
-        </div>
-        <div class="col-12 text-center">
-            <button type="submit" class="btn dento-btn">Booking Now</button>
-        </div>
-        </div>
-    </form>
     </div>
-</div>
-</div>
-</div>
 </section>
 <!-- Book An Oppointment Area End -->
 

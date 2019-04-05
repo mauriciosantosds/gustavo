@@ -9,6 +9,7 @@
   "author": "colorlib",
   "license": "CC-BY-3.0",
   "devDependencies": {
+    "bxslider": "^4.2.14",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.6.1",

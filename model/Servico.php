@@ -25,6 +25,17 @@ class Servico {
         return $sth->fetchAll(PDO::FETCH_CLASS, $class);
     }
 
+    public function resume($filter, $class = 'stdClass') {
+        $sql = "SELECT id, imgcapa, titulo, SUBSTRING(conteudo, 1, 100) as conteudo FROM servico  ";
+        if ($filter) {
+            $sql .= "WHERE $filter";
+        }
+        //print "$sql <br>\n";
+        $sth = self::$conn->prepare($sql);
+        $sth->execute();
+        return $sth->fetchAll(PDO::FETCH_CLASS, $class);
+    }
+
     public function delete($id) {
         $sql = "DELETE FROM cliente where id = ?";
         $sth = self::$conn->prepare($sql);
