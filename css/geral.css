@@ -1,0 +1,33 @@
+.fproced li {
+    margin-bottom: 17px;
+}
+.fproced a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.fproced a:hover {
+    color: #00aeef;
+}
+
+.nav-footer {
+    text-align: center;
+}
+
+.nav-footer ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-footer ul li {
+    float:left;
+    padding-right: 20px;
+}
+
+.nav-footer ul li a {
+    color: #fff;
+}
+
+.nav-footer ul li a:hover {
+    color: #00aeef;
+}

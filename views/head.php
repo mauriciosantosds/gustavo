@@ -2,7 +2,7 @@
 switch ($page) {
 	case "Home": $title = "Home &ndash; Dr Gustavo Souza"; break;
 	case "Serviços e Procedimentos": $title = "Servicos e Procedimentos &ndash; Dr Gustavo Souza"; break;
-	case "empresa": $title = "Empresa :: Clube de Aventureiros de Alagoas - Sejam Bem vindos! ::"; break;
+	case "Orientações": $title = "Orientações &ndash; Dr Gustavo Souza"; break;
 	default: $title = ":: Clube de Aventureiros de Alagoas - Sejam Bem vindos! ::"; break;
 }
 ?>
