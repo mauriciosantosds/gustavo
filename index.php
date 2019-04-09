@@ -1,5 +1,5 @@
 <?php
-$page = "Home";
+$page = "Home &ndash; Dr Gustavo Souza";
 include 'model/Connection.php';
 include 'model/Servico.php';
 try {
@@ -104,6 +104,11 @@ try {
   right: 0;
 }
 </style>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="<?=$title?>"/>
+<meta property="og:description" content="Dr. Gustavo Souza Especialista em Ortodontia e Mestrando em DTM e Dor Orofacial"/>
+<meta property="og:url" content="http://gustavosouza.net/index.php"/>
+<meta property="og:image" content="http://gustavosouza.net/img/logo-1.png"/>
 </head>
 <?php include 'views/header.html';?>
 <?php include 'views/menu.html';?>

@@ -644,10 +644,10 @@ ul {
       line-height: 1.8;
       font-style: italic;
       margin-bottom: 15px;
-      color: #ffffff; }
+      color: #000; }
     .single-testimonial-slide .testimonial-content h6 {
       font-weight: 500;
-      color: #ffffff; }
+      color: #000; }
     .single-testimonial-slide .testimonial-content p {
       margin-bottom: 0;
       color: #ffffff; }

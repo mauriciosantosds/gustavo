@@ -1,9 +1,17 @@
+ <?php if (isset($id)) { ?>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2"></script>
+ <?php } ?>
  <!-- ***** Breadcrumb Area Start ***** -->
  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/12.jpg);">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
-          <h2 class="title"><?=$page?></h2>
+          <?php if(isset($id)) { ?>
+              <h2 class="title"><?= $post->titulo ?></h2>
+          <?php } else { ?>
+              <h2 class="title">Orientações</h2>
+          <?php } ?>
         </div>
       </div>
     </div>
@@ -14,8 +22,13 @@
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page"><?=$page?></li>
+              <li class="breadcrumb-item"><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
+              <?php if (isset($id)) {?>
+                <li class="breadcrumb-item" aria-current="page"><a href="orientacoes.php">Orientações</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><?=$post->titulo?></li>
+                <?php } else { ?>
+                  <li class="breadcrumb-item active" aria-current="page">Orientações</li>
+                <?php } ?>
             </ol>
           </nav>
         </div>
@@ -30,27 +43,31 @@
       <div class="row">
         <div class="col-12 col-lg-8">
 <?php
+setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+date_default_timezone_set('America/Sao_Paulo');
 if (isset($id)) {
+  $postdata = strftime('%d de %B de %Y', strtotime($post->postdata));
+  $page = $post->titulo;
     echo '  <!-- Blog Details Area -->
-    <div class="blog-details-area">
-      <h1 class="post-title">'.$post->titulo.'</h1>
+    <article class="blog-details-area">
+      
       <div class="post-meta">
-        <a href="#"><i class="icon_clock_alt"></i>'.$post->postdata.'</a>
+        <a href="#"><i class="icon_calendar"></i> '.$postdata.'</a>
       </div>
       '.$post->conteudo.'
-    </div>
+    </article>
 
     <!-- Post Share  -->
     <div class="post-share-area mb-30">
-      <a href="#" class="facebook"><i class="fa fa-facebook"></i> Share</a>
-      <a href="#" class="tweet"><i class="fa fa-twitter"></i> Tweet</a>
-      <a href="#" class="google-plus"><i class="fa fa-google-plus"></i> Share</a>
-      <a href="#" class="pinterest"><i class="fa fa-pinterest"></i> Share</a>
+      <a href="http://www.facebook.com/share.php?u=http://gustavosouza.net/orientacoes.php?id='.$post->id.'&t='.$post->titulo.'" target="_blank" class="facebook"><i class="fa fa-facebook"></i> Compartilhar</a>
+      <a href="https://twitter.com/intent/tweet?url=http://gustavosouza.net/orientacoes.php?id='.$post->id.'&text='.$post->titulo.'" class="tweet" target="_blank"><i class="fa fa-twitter"></i> Tweet</a>
     </div>';
 } else {
   foreach ($posts as $post) {
+    $postdata = strftime('%d de %B de %Y', strtotime($post->postdata));
+    $date = new DateTime($post->postdata);
+    //echo $date->format('d')." de ".$date->format("F")." de ".$date->format("Y");
     $conteudo = preg_replace("/<.*?>/", " ", $post->conteudo);
-    echo '<script>console.log("'.$conteudo.'");</script>';
     //Single Blog Item
     $html = '<div class="single-blog-item style-2 d-flex flex-wrap align-items-center mb-50">';
       //Blog Content
@@ -58,7 +75,7 @@ if (isset($id)) {
         <a href="orientacoes.php?id='.$post->id.'" class="post-title">'.$post->titulo.'</a>
         <p>'.$conteudo.' ...</p>
         <div class="post-meta">
-          <a href="#"><i class="icon_clock_alt"></i>'.$post->postdata.'</a>
+          <a href="orientacoes.php?id='.$post->id.'"><i class="icon_calendar"></i> '.$postdata.'</a>
         </div>
       </div>
     </div>';

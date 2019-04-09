@@ -81,7 +81,7 @@
                 <div class="wrapper-dent-cont bg-gradient-overlay">
                 <h5>Procedimentos</h5>
                 <p>Clareamento dental, diagnóstico e tratamento da Disfunção Temporo Mandibular (DTM) e da Dor Orofacial, mini-implantes, aparelhos ortodônticos e moldeiras de proteção para prática esportiva.</p>
-                <a href="#">Saiba mais</a>
+                <a href="servicos-procedimentos.php">Saiba mais</a>
                 </div>
         </div>
     </div>
@@ -92,7 +92,7 @@
             <div class="wrapper-dent-cont bg-gradient-overlay">
                 <h5>Marque sua consulta</h5>
                 <p>Entre em contato conosco e agende o horário de sua primeira consulta. Avaliaremos sua necessidade do uso de aparelho ortodôntico, além de realizarmos a triagem para outras especialidades.</p>
-                <a href="#">Saiba mais</a>    
+                <a href="fale-conosco.php">Saiba mais</a>    
             </div>
         </div>
     </div>
@@ -158,7 +158,7 @@
     <div class="col-12">
         <!-- Section Heading -->
         <div class="section-heading text-center white">
-            <h2>Our Services</h2>
+            <h2>Nossos serviços</h2>
             <div class="line"></div>
         </div>
     </div>
@@ -235,13 +235,11 @@
 </section>
 <!-- Dento Service Area End -->
 
-<!-- Book An Oppointment Area Start -->
-<section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/12.jpg');">
+<!-- Especialidades Area Start -->
+<!-- <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/12.jpg');">
     <div class="container">
         <div class="row">
-            <!-- Service Content -->
             <div class="col-12">
-                <!-- Section Heading -->
                 <div class="section-heading text-center white">
                     <h2>Especialidades estão à sua disposição, fale conosco</h2>
                     <div class="line"></div>
@@ -249,13 +247,13 @@
             </div>
         </div>
     </div>
-</section>
-<!-- Book An Oppointment Area End -->
+</section> -->
+<!-- Especialidades Area End -->
 
 
 
 <!-- ***** Testimonials Area Start ***** -->
-<section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('img/bg-img/7.jpg');">
+<section class="testimonials-area section-padding-100">
 <div class="container">
 <div class="row">
 <div class="col-12">
@@ -265,14 +263,16 @@
     <div class="single-testimonial-slide d-flex align-items-center">
         <!-- Thumbnail -->
         <div class="testimonial-thumb">
-        <img src="./img/bg-img/8.jpg" alt="">
+        <img src="http://gustavosouza.net/wp-content/uploads/dr-gustavo-2-300x300.jpg" alt="">
         </div>
         <!-- Content -->
         <div class="testimonial-content">
-        <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-            very helpful. Excellent treatment and advice.”</h5>
-        <h6>Arron Ramsey</h6>
-        <p>Dental Patient</p>
+        <h5>O que devo fazer se estiver sentindo dores nos dentes?</h5>
+        <h6>“Qualquer tipo de dor é um indicador do nosso organismo, mostrando 
+            que algo está fora da normalidade, devendo o paciente entrar em 
+            contato com o dentista. Entretanto, após a manutenção ortodôntica, 
+            pode haver um desconforto dentário durante alguns dias, o que é 
+            explicado pelo Ortodontista.”</h6>
         </div>
     </div>
 
@@ -280,14 +280,16 @@
     <div class="single-testimonial-slide d-flex align-items-center">
         <!-- Thumbnail -->
         <div class="testimonial-thumb">
-        <img src="./img/bg-img/8.jpg" alt="">
+        <img src="http://gustavosouza.net/wp-content/uploads/dr-gustavo-2-300x300.jpg" alt="">
         </div>
         <!-- Content -->
         <div class="testimonial-content">
-        <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-            very helpful. Excellent treatment and advice.”</h5>
-        <h6>Arron Ramsey</h6>
-        <p>Dental Patient</p>
+        <h5>Em quais outras áreas atua além de Aparelhos Ortodônticos?</h5>
+            
+        <h6>“Realizo triagem para outras especialidades, também ofereço 
+            diagnóstico e tratamento da Disfunção Temporomandibular (DTM) e 
+            Dor Orofacial, clareamento dental (método de consultório e método home), 
+            além de moldeiras de proteção para prática esportiva.”</h6>
         </div>
     </div>
 
@@ -295,14 +297,12 @@
     <div class="single-testimonial-slide d-flex align-items-center">
         <!-- Thumbnail -->
         <div class="testimonial-thumb">
-        <img src="./img/bg-img/8.jpg" alt="">
+        <img src="http://gustavosouza.net/wp-content/uploads/dr-gustavo-2-300x300.jpg" alt="">
         </div>
         <!-- Content -->
         <div class="testimonial-content">
-        <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-            very helpful. Excellent treatment and advice.”</h5>
-        <h6>Arron Ramsey</h6>
-        <p>Dental Patient</p>
+        <h5>Quais são os horários de funcionamento?</h5>
+        <h6>“ O consultório está em funcionamento de segunda a sexta, das 08:00h às 18:00h, entretanto consultas poderão ser agendadas em outros horários e aos sábados, de acordo com a disponibilidade do dentista e do paciente.”</h6>
         </div>
     </div>
     </div>
@@ -311,75 +311,3 @@
 </div>
 </section>
 <!-- ***** Testimonials Area End ***** -->
-
-<!-- ***** Blog Area Start ***** -->
-<section class="dento-blog-area section-padding-100-0 clearfix">
-<div class="container">
-<div class="row">
-<!-- Section Heading -->
-<div class="col-12">
-    <div class="section-heading text-center">
-    <h2>The Latest News</h2>
-    <div class="line"></div>
-    </div>
-</div>
-</div>
-
-<div class="row">
-<!-- Single Blog Item -->
-<div class="col-12 col-md-6 col-lg-4">
-    <div class="single-blog-item mb-100">
-    <a href="./blog-details.html">
-        <img src="./img/bg-img/4.jpg" alt="">
-    </a>
-    <!-- Blog Content -->
-    <div class="blog-content">
-        <a href="./blog-details.html" class="post-title">How your mouth bacteria can harm your lungs</a>
-        <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
-        <div class="post-meta">
-        <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
-        <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
-        </div>
-    </div>
-    </div>
-</div>
-
-<!-- Single Blog Item -->
-<div class="col-12 col-md-6 col-lg-4">
-    <div class="single-blog-item mb-100">
-    <a href="./blog-details.html">
-        <img src="./img/bg-img/5.jpg" alt="">
-    </a>
-    <!-- Blog Content -->
-    <div class="blog-content">
-        <a href="./blog-details.html" class="post-title">What is the best kind of toothpaste to use?</a>
-        <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
-        <div class="post-meta">
-        <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
-        <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
-        </div>
-    </div>
-    </div>
-</div>
-
-<!-- Single Blog Item -->
-<div class="col-12 col-md-6 col-lg-4">
-    <div class="single-blog-item mb-100">
-    <a href="./blog-details.html">
-        <img src="./img/bg-img/6.jpg" alt="">
-    </a>
-    <!-- Blog Content -->
-    <div class="blog-content">
-        <a href="./blog-details.html" class="post-title">Why you should avoid sipping your drinks</a>
-        <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
-        <div class="post-meta">
-        <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
-        <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
-</div>
-</section>
-<!-- ***** Blog Area End ***** -->

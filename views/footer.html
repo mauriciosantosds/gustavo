@@ -24,11 +24,11 @@
 
             <!-- Opening Hours -->
             <ul class="fproced">
-              <li><a href="#">Clareamento dental</a></li>
-              <li><a href="#">Limpeza dentária</a></li>
-              <li><a href="#">Diagnóstico e tratamento da Disfunção Temporo Mandibular (DTM) e Dor Orofacial</a></li>
-              <li><a href="#">Mini-implantes</a></li>
-              <li><a href="#">Moldeiras de proteção para prática esportiva</a></li>
+              <li><a href="servicos-procedimentos.php?id=5">Clareamento dental</a></li>
+              <li><a href="servicos-procedimentos.php?id=4">Limpeza dentária</a></li>
+              <li><a href="servicos-procedimentos.php?id=3">Diagnóstico e tratamento da Disfunção Temporo Mandibular (DTM) e Dor Orofacial</a></li>
+              <li><a href="servicos-procedimentos.php?id=1">Mini-implantes</a></li>
+              <li><a href="servicos-procedimentos.php?id=2">Moldeiras de proteção para prática esportiva</a></li>
             </ul>
           </div>
         </div>
@@ -42,12 +42,12 @@
             <!-- Quick Links Nav -->
             <nav>
               <ul class="fproced">
-                <li><a href="#">Aparelho Alinhador Estético</a></li>
-                <li><a href="#">Aparelho Auto-Ligável</a></li>
-                <li><a href="#">Aparelho Estético</a></li>
-                <li><a href="#">Aparelho lingual</a></li>
-                <li><a href="#">Aparelhos de Contenção</a></li>
-                <li><a href="#">Ver mais aparelhos</a></li>
+                <li><a href="servicos-procedimentos.php?id=9">Aparelho Alinhador Estético</a></li>
+                <li><a href="servicos-procedimentos.php?id=8">Aparelho Auto-Ligável</a></li>
+                <li><a href="servicos-procedimentos.php?id=12">Aparelho Estético</a></li>
+                <li><a href="servicos-procedimentos.php?id=10">Aparelho lingual</a></li>
+                <li><a href="servicos-procedimentos.php?id=6">Aparelhos de Contenção</a></li>
+                <li><a href="servicos-procedimentos.php">Ver mais aparelhos</a></li>
               </ul>
             </nav>
           </div>
@@ -59,15 +59,20 @@
             <!-- Widget Title -->
             <h5 class="widget-title">Fale conosco</h5>
             <!-- Newsletter Form -->
+            <div id="info-footer"></div>
             <div class="appointment-form">
-              <form action="#" method="post">
+              <form id="fale-conosco-footer" method="post">
                 <div class="form-group">
-                  <input type="email" name="nl-email" value="" placeholder="Email" class="form-control">
+                    <div class="g-recaptcha" data-sitekey="6LdKvpwUAAAAAElcsjrWPDfNzHg67j549daXkJKb"></div>
                 </div>
                 <div class="form-group">
-                  <textarea name="mens" value="" placeholder="Mensagem" class="form-control"></textarea>
+                  <input type="email" name="message-email" value="" placeholder="Email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" value="" placeholder="Mensagem" class="form-control" required></textarea>
                 </div>
                 <button class="btn dento-btn">Enviar</button>
+          </div>
               </form>
             </div>
 
@@ -88,12 +93,12 @@
         <div class="col-12">
             <nav class="nav-footer">
                 <ul id="nav">
-                  <li><a href="index.html">Início</a></li>
-                  <li><a href="about.html">Serviços e procedimentos</a></li>
-                  <li><a href="service.html">Clínica</a></li>
-                  <li><a href="pricing.html">Currículo</a></li>
-                  <li><a href="blog.html">Orientações</a></li>
-                  <li><a href="blog-details.html">Fale conosco</a></li>
+                  <li><a href="index.php">Início</a></li>
+                  <li><a href="servicos-procedimentos.php">Serviços e procedimentos</a></li>
+                  <li><a href="clinica.php">Clínica</a></li>
+                  <li><a href="curriculo.php">Currículo</a></li>
+                  <li><a href="orientacoes.php">Orientações</a></li>
+                  <li><a href="fale-conosco.php">Fale conosco</a></li>
                 </ul>
               </nav>
         </div>
@@ -106,8 +111,10 @@
         <div class="col-12">
           <div class="copywrite-content">
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>          
+              &copy; 2019 
+               Desenvolvido por <a href="http://rafaeldemoraes.com.br" target="_blank">
+                Estúdio Rafael de Moraes</a>
+            </p>          
           </div>
         </div>
       </div>
@@ -126,3 +133,30 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="js/dento.bundle.js"></script>
   <!-- Active js -->
   <script src="js/default-assets/active.js"></script>
+<script>
+    $("#fale-conosco-footer").submit(function(e) {
+      var formData = new FormData(this);
+    $.ajax({
+      url: 'contato.php',
+      type: 'POST',
+      data: formData,
+      cache: false,
+      contentType: false,
+      processData: false,
+      success: function( data ) {
+        if (data == '200') {
+          $("#info-footer").html('<div class="alert alert-success">'
+            +'Mensagem enviada!</div>');
+          }
+        if (data == 'roboerro') {
+            $("#info-footer").html('<div class="alert alert-danger">'
+            +'Problemas no envio marque o botão não sou um robô!</div>');
+        }
+        },
+        error: function (request, status, error) {
+          console.log(request+" error "+error);
+        }
+      }); 
+      e.preventDefault();
+    });
+</script>

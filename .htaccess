@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Página servicos e procedimentos
+  #RewriteRule ^servicos-procedimentos/?$ servicos-procedimentos.php [NC,L]
+  # Página clinica
+  RewriteRule ^clinica/?$ clinica.php [NC,L]
+  #Curriculo
+  RewriteRule ^curriculo/?$ curriculo.php [NC,L]
+  
+  #Orientacoes
+  RewriteRule ^orientacoes/?$ orientacoes.php [NC,L]  
+  
+  #Fale conosco
+  RewriteRule ^fale-conosco/?$ fale-conosco.php [NC,L]
+  
+  #index
+  RewriteRule ^index/?$ index.php [NC,L]    
+  
+  #servicos e procedimentos
+  RewriteRule ^servicos-e-procedimentos/?$ servicos-procedimentos.php [NC,L]
+  RewriteRule ^servicos-e-procedimentos/([id]+)/([0-9]+)?$ servicos-procedimentos.php?id=$2 [NC]
+  # Página de exibição de uma categoria de livros
+  RewriteRule ^livro/([a-z0-9-]+)/?$ /livros.php?categoria=$1 [NC,L]
+  # Página de exibição de um artigo com a data na URL
+  RewriteRule ^artigo/([0-9]{4})/([0-9]{2})/([0-9]{2})/([a-z0-9-]+)/([0-9]+)/?$ /artigo.php?id=$5&nome=$4&data=$1-$2-$3 [NC]
+</IfModule>

@@ -1,5 +1,5 @@
 <?php
-$page = "Serviços e Procedimentos";
+$page = " &ndash; Dr Gustavo Souza";
 include 'model/Connection.php';
 include 'model/Servico.php';
 try {
@@ -9,7 +9,9 @@ try {
     if (isset($_GET["id"])) {
         $id = $_GET["id"];
         $servico = $s->find($id);
+        $page = $servico->titulo . $page;
     } else {
+        $page = "Serviços e Procedimentos" . $page;
         $servicos = $s->resume("");
     }
 } catch (Exception $e) {
@@ -104,6 +106,11 @@ try {
 </style>
 <link rel="stylesheet" href="css/photobox.css">
 <link rel="stylesheet" href="css/photobox.ie.css">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="<?=$title?>"/>
+<meta property="og:description" content="Dr. Gustavo Souza Especialista em Ortodontia e Mestrando em DTM e Dor Orofacial"/>
+<meta property="og:url" content="http://gustavosouza.net/servicos-procedimentos.php"/>
+<meta property="og:image" content="http://gustavosouza.net/img/logo-1.png"/>
 </head>
 <?php include 'views/header.html';?>
 <?php include 'views/menu.html';?>

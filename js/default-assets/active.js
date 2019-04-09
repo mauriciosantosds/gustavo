@@ -72,6 +72,7 @@
         loop: true,
         autoplay: true,
         smartSpeed: 700,
+        autoplayTimeout: 10000,
         nav: true,
         navText: ["<i class='arrow_carrot-left'</i>", "<i class='arrow_carrot-right'</i>"],
         dots: false

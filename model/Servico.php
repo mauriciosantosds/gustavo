@@ -15,7 +15,7 @@ class Servico {
     }
 
     public function all($filter, $class = 'stdClass') {
-        $sql = "SELECT * FROM servico  ";
+        $sql = "SELECT * FROM servico ORDER BY id ASC ";
         if ($filter) {
             $sql .= "WHERE $filter";
         }
@@ -26,7 +26,7 @@ class Servico {
     }
 
     public function resume($filter, $class = 'stdClass') {
-        $sql = "SELECT id, imgcapa, titulo, SUBSTRING(conteudo, 1, 100) as conteudo FROM servico  ";
+        $sql = "SELECT id, imgcapa, titulo, SUBSTRING(conteudo, 1, 100) as conteudo FROM servico ORDER BY id DESC  ";
         if ($filter) {
             $sql .= "WHERE $filter";
         }

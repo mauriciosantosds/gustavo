@@ -3,7 +3,12 @@
      <div class="container h-100">
          <div class="row h-100 align-items-center">
              <div class="col-12">
-                 <h2 class="title"><?= $page ?></h2>
+                <?php if(isset($id)) { ?>
+                    <h2 class="title"><?= $servico->titulo ?></h2>
+                <?php } else { ?>
+                    <h2 class="title">Serviços e Procedimentos</h2>
+                <?php } ?>
+
              </div>
          </div>
      </div>
@@ -15,7 +20,12 @@
                  <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
                          <li class="breadcrumb-item"><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-                         <li class="breadcrumb-item active" aria-current="page"><?= $page?></li>
+                         <?php if(isset($id)) {?>
+                            <li class="breadcrumb-item"><a href="servicos-procedimentos.php"> Serviços e Procedimentos</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><?= $servico->titulo ?></li>
+                            <?php } else { ?>
+                                <li class="breadcrumb-item active">Serviços e Procedimentos</li>
+                            <?php } ?>
                      </ol>
                  </nav>
              </div>
@@ -35,7 +45,6 @@
         foreach ($imagens as $img) {
           if ($contador == 0) {
             echo '<div class="col-lg-8 col-12">
-            <h6 class="wrap-title-sp">'.$servico->titulo.'</h6>
             <div id="gallery">
              <div class="row">
             <div class="col-lg-12">

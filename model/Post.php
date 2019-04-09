@@ -26,8 +26,12 @@ class Post {
     }
 
     public function resume($filter, $class = 'stdClass') {
+        /* $sql = "SET lc_time_names = 'pt_BR'";
+        $sth = self::$conn->prepare($sql);
+        $sth->execute(); */
         $sql = "SELECT id, titulo, SUBSTRING(conteudo, 1, 100) as conteudo, 
-        postdata FROM post  ";
+        date_format((postdata),'%Y-%m-%d')
+        AS postdata  FROM post ";
         if ($filter) {
             $sql .= "WHERE $filter";
         }
