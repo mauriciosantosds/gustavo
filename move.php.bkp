@@ -1,0 +1,38 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "3421";
+$dbname = "gustavo_cms";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT id, imagensurl, imgcapa FROM gustavo_cms.servico";
+$result = $conn->query($sql);
+echo getcwd();
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $slices = explode("/",$row["imgcapa"]);
+	$id = $row["id"];
+	$url = "img/servicos-procedimentos/".$slices[5];
+	$sql = "update servico set imgcapa = '".$url."' where id = $id";		
+	$conn->query($sql);
+	/*foreach ($slices as $key=>$value) {
+		$url = "img/servicos-procedimentos/".$value.",";
+		$sql = "update servico set imagensurl = '".$url."' where id = $id";		
+		$conn->query($sql);
+	}*/
+
+	//var_dump($slices[5]);
+	
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>

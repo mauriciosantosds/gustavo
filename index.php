@@ -14,9 +14,14 @@ try {
 <?php include 'views/head.php'; ?>
 <link rel="stylesheet" href="css/geral.css">
 <style>
+.single-cta h5 {
+    margin-bottom: 4px;
+}
+
 #obs {
   padding-top: 20px;
   font-weight: bold;
+  color: #000;
 }
 .wrap-title {
   padding-top: 20px;

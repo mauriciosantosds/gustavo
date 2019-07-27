@@ -31,7 +31,8 @@
     <div class="single-cta text-center mt-50 mb-100">
     <i class="icon_mobile"></i>
     <h4>Fale conosco</h4>
-    <h5>(34) 3661 3490</h5>
+    <h5>Telefone (34) 3661 3490</h5>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5534999503490"><h5>WhatsApp (34) 99950-3490</h5></a>
     </div>
 </div>
 

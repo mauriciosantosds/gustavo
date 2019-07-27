@@ -49,8 +49,8 @@
              <div class="row">
             <div class="col-lg-12">
                 <div class="img-principal">
-                          <a href="http://gustavosouza.net/wp-content/uploads/'.$img.'">
-                            <img src="http://gustavosouza.net/wp-content/uploads/'.$img.'" alt="">
+                          <a href="img/servicos-procedimentos/'.$img.'">
+                            <img src="img/servicos-procedimentos/'.$img.'" alt="">
                           </a>
                         </div>
                       </div>  
@@ -59,8 +59,8 @@
             echo '
                     <div class="col-lg-3">
                       <div class="img-menor">
-                        <a href="http://gustavosouza.net/wp-content/uploads/'.$img.'">
-                          <img src="http://gustavosouza.net/wp-content/uploads/'.$img.'" alt="">
+                        <a href="img/servicos-procedimentos/'.$img.'">
+                          <img src="img/servicos-procedimentos/'.$img.'" alt="">
                         </a>
                       </div>
                     </div>';
