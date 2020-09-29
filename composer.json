@@ -1,0 +1,5 @@
+{
+    "require": {
+        "coffeecode/optimizer": "^1.0"
+    }
+}
